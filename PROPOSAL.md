@@ -46,6 +46,7 @@ Vanilla HTML, CSS and Javascript (MAYBE ANOTHER LANGUAGE IF IM FEELING SPICY)
 ## MVP User Stories
 
 * As a user, I want to see the start button.
+* As a user, I want to be able to click on a choice inorder to provide an answer for the game.
 
 * As a user, I want to see my life count so I know how much lives I have before the game is over.
 
@@ -87,13 +88,27 @@ Javascript
             play audio of pokemon sound
     create a if/else statement for winner and losing message
 ```
+### **Starter Page**
+<a href="https://ibb.co/59GshfN"><img src="https://i.ibb.co/sPbs9M0/D87-C3-B36-9-B1-A-4-F01-A9-C5-3-FA4673-E9024.jpg" alt="D87-C3-B36-9-B1-A-4-F01-A9-C5-3-FA4673-E9024" border="0" /></a>
+
+### **Game Page**
+<a href="https://ibb.co/nkZF1HD"><img src="https://i.ibb.co/Jk09pfz/D7-FC204-A-295-C-45-A9-B977-F1-AD89820-E72.jpg" alt="D7-FC204-A-295-C-45-A9-B977-F1-AD89820-E72" border="0" /></a>
+
+### **Winning Page**
+<a href="https://ibb.co/djrhLMw"><img src="https://i.ibb.co/VJtKQ9c/486-D5768-AB33-474-D-9506-2-F73-EAEAFC2-D-1.jpg" alt="486-D5768-AB33-474-D-9506-2-F73-EAEAFC2-D-1" border="0" /></a>
+
+
+
+
+
+
 | Day       |   | Task                                                      | Blockers | Notes/Thoughts |
 |-----------|---|-----------------------------------------------------------|----------|----------------|
-| Monday  |   | Complete Proposal and create initial HTML and CSS         scaffolding                   |          |                |
-| Tuesday  |   | Create Javascript classes and begin adding functionality  |          |                |
-| Wednesday  |   | Finalize scaffolding, start MVP |          |                |
-| Thursday   |   | Work on MVP                                               |          |                |
-| Friday |   | Complete MVP, check for bugs and edge cases               |          |                |
-| Saturday |   | Work on stretch goals                                     |          |                |
-| Sunday  |   | Improve styling, clean up code                            |          |                |
+| Monday  |   | Complete proposal, create initial HTML/CSS scaffolding, create Javascript classes and begin adding functionality                   |          |                |
+| Tuesday  |   | Finalize scaffolding, start MVP  |          |                |
+| Wednesday  |   | Work on MVP |          |                |
+| Thursday   |   | Complete MVP, check for bugs and edge cases                                                 |          |                |
+| Friday |   | Work on stretch goals            |          |                |
+| Saturday |   |  Improve styling, clean up code                                    |          |                |
+| Sunday  |   |  Deployment                          |          |                |
 | Monday    |   | Present!                                                  |          |                |           
