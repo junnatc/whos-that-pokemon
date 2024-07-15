@@ -68,6 +68,8 @@ Vanilla HTML, CSS and Javascript (MAYBE ANOTHER LANGUAGE IF IM FEELING SPICY)
 Create HTML and CSS scaffolding
     HTML has four sections: display pokemon, game start screen, display game board, display end screen. When user presses start use JS to change css classes to hide the starting html and show the game html, when the game ends hide the game board and show the end screen.
 Javascript
+    Create two js files: one for the Poke API and one for the index
+    Index JS file:
     Define variables needed
     Create classes to seperate data recieved from user and objects to control.
     Create methods to control the pokemon figure, life count, buttons.
