@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src= "index.html"></script>
 </head>
+<title>Who's That Pokemon</title>
 <body>
+  <img src="https://images3.alphacoders.com/677/thumb-1920-677583.png" alt="background"> 
   <main>
     <div id="pokemon-container">
         <img id="pokeball" src="https://res.cloudinary.com/dzynqn10l/image/upload/v1633196610/Msc/pokeball_zeoqii.webp">
-        <img id="pokemon-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D">
-      </div>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div id="controls">
-    <button id= "play-button">Play</button>
-    <button id = "restart-button">Restart</button>
-    <div id = "choice"></button>
+       
+        <div id ="controls">
+          <a href="./pages/gamePage.html">
+          <button onclick= "navigateToDestination()" id= "play-button"></button>
+          </a>
+        </div>
     </div>
-    <div id="answer">
-      <div id=""
-    </div>
+
+    <audio id="audio" controls autoplay>
+      <source src=" https://www.televisiontunes.com/uploads/audio/Pokemon.mp3" type="audio/mp3">
+    </audio>
+   <script>
+    let myAudio = document.querySelector('#audio')
+    myAudio.play()
+   </script>
+  
+  </div>
+    
+  
 </main>  
 </body>
 </html>
