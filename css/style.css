@@ -12,11 +12,15 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 img {
   height: 100%;
   width: 100%;
+  
 }
 
 main {
@@ -29,7 +33,7 @@ main {
   display: ;
 }
 
-#pokemon-container {
+#pokeball-img {
     height: 100%;
     display: flex;
     flex-direction: column;

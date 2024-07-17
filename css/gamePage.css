@@ -17,3 +17,80 @@ main {
   top: 0;
 }
 
+#guess-pokemon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 19%;
+  width: 20%; /* Ensure it spans the entire width of its container */
+  height: 45%; /* Ensure it spans the entire height of its container */
+  align-items: center;
+  padding-top: 10%;
+  filter: brightness(0);
+  transition: filter 0.5s ease-out;
+}
+#poke-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+/* Player Choice Button Styling */
+#choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 40px; 
+  position: absolute; 
+  top: 10%; 
+  left: 70%; 
+  transform: translate(-50%, -50%); 
+  padding: 40px 40px;
+  margin-top: 190px;
+  height: 55%;
+  width: 55%;
+}
+#option1 {
+    background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+}
+
+#option1:hover {
+    transform: translate(-8px)
+}
+#option2 {
+    background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+}
+#option2:hover {
+    transform: translate(-8px)
+}
+#option3 {
+    background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+}
+#option3:hover {
+    transform: translate(-8px)
+}
+#option4 {
+    background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+}
+#option4:hover {
+    transform: translate(-8px)
+}

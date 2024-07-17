@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/gamePage.css">
-    <script defer src="../js/index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/gamePage.css" />
+
     <title>Game Page</title>
-</head>
-<body>
-    <img src = "../gamePageBG.png" alt="background">
-    
-    
-    
-    
-</body>
+  </head>
+  <body>
+    <main>
+      <img src="../gamePageBG.png" alt="background" />
+      <div id="poke-container">
+        <img id="guess-pokemon" src="" >
+        <div id="choices">
+            <button id= "option1"></button>
+            <button id= "option2"></button>
+            <button id= "option3"></button>
+            <button id= "option4"></button>
+          </div>
+      </div>
+        
+      <div id="life-count"></div>
+      <div id="answer-display">
+        <div id="text-bubble-bg"></div>
+        <div id="text-display"></div>
+      </div>
+    </main>
+    <script defer src="../poke-api/api.js"></script>
+    <script defer src="../js/index.js"></script>
+  </body>
 </html>
