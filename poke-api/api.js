@@ -4,7 +4,7 @@ const getPokeData = async function () {
   const pokemon = await getPokemon(); // [{}, {}, {}]
   const randomPokemon = shuffle(pokemon);
 
-  const pokemonChoices = get5Pokemon(randomPokemon);
+  const pokemonChoices = get4Pokemon(randomPokemon);
   const [firstPokemon] = pokemonChoices;
   const image = getPokemonImage(firstPokemon);
 
@@ -36,8 +36,8 @@ function shuffle(unshuffled) {
   return shuffled;
 }
 
-function get5Pokemon(randomPokemon) {
-  return randomPokemon.splice(0, 5);
+function get4Pokemon(randomPokemon) {
+  return randomPokemon.splice(0, 4);
 }
 
 function getPokemonImage({ url }) {
@@ -51,14 +51,35 @@ function getNumber(url) {
 }
 
 async function playGame(){
-  const pokeData = await getPokeData()
-  displayPokemon(pokeData)
+  const pokeData = await getPokeData();
+  displayPokemon(pokeData);
   
 }
 
 playGame()
 
 function displayPokemon(displayData){
+  console.log(displayData)
   const pokeImgElement = document.querySelector("#guess-pokemon")
   pokeImgElement.src = displayData.correct.image
+  // querySelect every option button
+  const choices = document.querySelectorAll(".choice")
+  choices.forEach((element, i) => {
+    element.innerText = displayData.pokemonChoices[i].name
+    element.addEventListener("click", () => checkAnswer(displayData.pokemonChoices[i].name, displayData.correct.name, element))
+  });
+  // iterate through choices and set innerText to correct displayData.pokemonChoices
+  // inject the different choices from the displayData
+}
+
+function checkAnswer(userChoice, correctAnswer, element) {
+  if (userChoice === correctAnswer){
+    element.style.color = "green"
+  } else {
+    element.style.color = "red"
+  }
+}
+
+function stopRound(checkAnswer) {
+  
 }

@@ -44,11 +44,18 @@ main {
   top: 10%; 
   left: 70%; 
   transform: translate(-50%, -50%); 
-  padding: 40px 40px;
+  padding: 20px 10px;
   margin-top: 190px;
-  height: 55%;
-  width: 55%;
+  height: 45%;
+  width: 45%;
 }
+
+#answer-display {
+  position: absolute;
+  top: 60%;
+  left: 16%;
+}
+
 #option1 {
     background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
     background-repeat: no-repeat;
@@ -56,10 +63,16 @@ main {
     background-color: transparent;
     border: none;
     background-size: contain;
+    z-index: inherit;
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    font-weight: 400;
+
 }
 
 #option1:hover {
-    transform: translate(-8px)
+    transform: translate(-8px);
+    cursor: pointer;
 }
 #option2 {
     background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
@@ -68,9 +81,14 @@ main {
     background-color: transparent;
     border: none;
     background-size: contain;
+    z-index: inherit;
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    font-weight: 400;
 }
 #option2:hover {
-    transform: translate(-8px)
+    transform: translate(-8px);
+    cursor: pointer;
 }
 #option3 {
     background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
@@ -79,9 +97,14 @@ main {
     background-color: transparent;
     border: none;
     background-size: contain;
+    z-index: inherit;
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    font-weight: 400;
 }
 #option3:hover {
-    transform: translate(-8px)
+    transform: translate(-8px);
+    cursor: pointer;
 }
 #option4 {
     background-image: url(https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fa002c926911eb.png);
@@ -90,7 +113,65 @@ main {
     background-color: transparent;
     border: none;
     background-size: contain;
+    z-index: inherit;
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    font-weight: 400;
 }
 #option4:hover {
-    transform: translate(-8px)
+    transform: translate(-8px);
+    cursor: pointer;
+}
+#text-bubble-bg {
+  display: flex;
+  /* position: absolute;
+  top: 0;
+  left: 14%; */
+  width: 45%; /* Ensure it spans the entire width of its container */
+  /* height: 25%;  */
+  align-items: center;
+  /* padding-top: 30%; */
+}
+
+
+/* #text-display {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 30%;
+  height: 25%; 
+  align-items: center;
+  padding-top: 35.5%;
+  z-index: inherit;
+} */
+
+#text-display {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+}
+
+#text-display p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-family: "VT323", monospace;
+  font-size: x-large;
+  animation: 
+    typing 0.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black}
 }
