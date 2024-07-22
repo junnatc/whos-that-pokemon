@@ -11,7 +11,7 @@ There will be four mutiple choice options where the player will choose which pok
 
 #### *Life Count:*
 
-The player will have 4 lives, every time the player's choice is wrong, one life is deducted, the game will reveal the pokemon and move on to the next round. Once all lives are gone, the game will be over.
+The player will have 3 lives, every time the player's choice is wrong, one life is deducted, the game will reveal the pokemon and move on to the next round. Once all lives are gone, the game will be over.
 
 ### **Game Mechanics**
 
@@ -41,7 +41,7 @@ There will be life count in the corner of the screen. Each time a player deducts
 
 ## **Technologies Used**
 
-Vanilla HTML, CSS and Javascript (MAYBE ANOTHER LANGUAGE IF IM FEELING SPICY)
+Vanilla HTML, CSS and Javascript 
 
 ## MVP User Stories
 
