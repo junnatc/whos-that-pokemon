@@ -4,35 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <script defer src= "index.html"></script>
+  <title>Who's That Pokemon</title>
 </head>
-<title>Who's That Pokemon</title>
 <body>
-  <img src="https://images3.alphacoders.com/677/thumb-1920-677583.png" alt="background"> 
-  <main>
+  <div id="background-container">
+    <img id="background-image" src="https://images3.alphacoders.com/677/thumb-1920-677583.png" alt="background">
     <div id="pokeball-img">
-        <img id="pokeball" src="https://res.cloudinary.com/dzynqn10l/image/upload/v1633196610/Msc/pokeball_zeoqii.webp">
-       
-        <div id ="controls">
-          <a href="./pages/gamePage.html">
-          <button onclick= "navigateToDestination()" id= "play-button"></button>
-          </a>
-        </div>
-      
+      <img id="pokeball" src="https://res.cloudinary.com/dzynqn10l/image/upload/v1633196610/Msc/pokeball_zeoqii.webp">
+      <div id="controls">
+        <a href="./pages/gamePage.html">
+          <button onclick="navigateToDestination()" id="play-button"></button>
+        </a>
+      </div>
     </div>
-
-    <audio id="audio" controls autoplay>
-      <source src=" https://www.televisiontunes.com/uploads/audio/Pokemon.mp3" type="audio/mp3">
-    </audio>
-   <script>
+    <img id="pickachu" class="pokemon" src="pickachu.png" alt="pickachu">
+    <img id="dirt" class="pokemon" src="dirt.png" alt="dirt">
+    <img id="eve" class="pokemon" src="eve.png" alt="eve">
+    <img id="charizard" class="pokemon" src="charizard.png" alt="charizard">
+    <img id="bulbasar" class="pokemon" src="bulbasar.png" alt="bulbasar">
+    <img id="squirtle" class="pokemon" src="squirtle.png" alt="squirtle">
+    <img id="sleepy" class="pokemon" src="sleepy.png" alt="sleepy">
+  </div>
+  <audio id="audio" controls autoplay>
+    <source src="https://www.televisiontunes.com/uploads/audio/Pokemon.mp3" type="audio/mp3">
+  </audio>
+  <script>
     let myAudio = document.querySelector('#audio')
     myAudio.play()
-   </script>
-  
-  </div>
-  
-    
-  
-</main>  
+  </script>
 </body>
 </html>
