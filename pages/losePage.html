@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/winPage.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Lost!</title>
+</head>
+<body>
+    <h1><img src="../gameOverLose.png" id="Game-Lost" /></h1>
+    <main>
+        <img src="../loser.gif" alt="background" id="background" /> 
+        <div id="controls">
+            <button onclick="navigateToGamePage()" id="replay-button"></button>
+        </div>
+    </main>
+    <audio id="audio" controls autoplay>
+        <source src="../Pokémon XY - BlackWhite Emotion Music (HQ) (1) (1).mp3" type="audio/mp3">
+      </audio>
+    <script defer src="../poke-api/api.js"></script> 
+    <script defer src="../js/index.js"></script>
+</body>
+</html>
