@@ -1,0 +1,104 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: none; /* Remove background styles from body/html */
+}
+
+#background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+#background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure background is behind other content */
+}
+
+#pokeball-img {
+  position: absolute;
+  top: 60%; /* Adjust to vertically center */
+  left: 31%; /* Adjust to horizontally center */
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+#pokeball {
+  width: 200px;
+  height: 200px;
+  
+  animation: wiggle 1.38s infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  80% { transform: rotate(0deg); }
+  85% { transform: rotate(6deg); }
+  95% { transform: rotate(-6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#controls {
+  margin-top: 20px; /* Add spacing between pokeball and play button */
+}
+
+#play-button {
+  height: 100px;
+  width: 250px;
+  background-image: url(../playButton.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  background-size: 170px;
+  z-index: inherit;
+  cursor: pointer;
+  padding-top: 80%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#play-button:hover {
+  transform: scale(1.1);
+}
+
+#audio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+}
+
+/* Images scattered around the pokeball */
+.pokemon {
+  position: absolute;
+  width: 98px; /* Adjust size as needed */
+  height: 110px; /* Adjust size as needed */
+  animation: bounce 1s ease-in-out infinite alternate;
+  filter: brightness(0);
+}
+
+/* Define animation for bouncing effect */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+/* Position each image randomly around the pokeball */
+#pickachu { top: 17%; left: 15%; }
+#dirt { top: 7%; left: 27%; }
+#eve { top: 60%; left: 14%; }
+#charizard { top: 35%; left: 45%; }
+#bulbasar { top: 35%; left: 8%; }
+#squirtle { top: 12%; left: 40%; }
+#sleepy { top: 60%; left: 40%; }
+

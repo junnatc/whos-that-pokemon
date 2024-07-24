@@ -1,0 +1,77 @@
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure background is behind other content */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjusted from contain to cover for better fitting */
+}
+
+#controls {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#replay-button {
+    height: 100px;
+    width: 250px;
+    background-image: url(../replay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    background-size: 250px;
+    z-index: inherit;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#replay-button:hover {
+    transform: scale(1.1); 
+    box-shadow: none; 
+}
+
+#caption {
+    position: absolute;
+    text-align: center;
+    padding-top: 20%;
+    left: 5.5%;
+    line-height: 55px;
+    font-family: "Press Start 2P", system-ui;
+    font-size: xx-large;
+    font-weight: 400;
+    font-style: bold;
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Hide overflow for better animation */
+    color: white;
+    text-shadow: text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;
+    
+}
+
+
+
+#Game-Lost {
+    animation: bounce 1s ease infinite; /* Apply bounce animation */
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-20px); /* Bounce up */
+    }
+}
+#audio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+  }
